@@ -1,10 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
+    stage('Mensaje') {
       steps {
-        error 'sleep 5'
-        sleep 5
+        echo 'Hola desde stage1'
+      }
+    }
+    stage('Mensaje2') {
+      steps {
+        echo 'Hola stage 2'
       }
     }
   }
